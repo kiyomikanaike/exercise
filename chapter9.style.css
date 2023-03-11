@@ -23,10 +23,6 @@ main{
   background-color:#eee;
 }
 
-.box:last-child{
-  margin-right:0;
-}
-
 .box-img1{
   height:150px;
   background-image:url(chapter9image/flow01.png);
@@ -63,4 +59,29 @@ main{
 footer{
   background-color:#aaa;
   height:50px;
+}
+
+@media screen and (max-width: 768px){
+  header{
+    margin-bottom: 50px;
+  }
+
+  .box{
+    width:90%;
+    display: block;
+    margin:20px auto;
+  }
+
+  main{
+    width:100%;
+    display: block;
+  }
+
+  .box-image1,.box-image2,.box-image3{
+    height:150px;
+  }
+
+  footer{
+    margin-top:50px;
+  }
 }
